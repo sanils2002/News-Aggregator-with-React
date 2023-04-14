@@ -1,5 +1,6 @@
 body {
   background-image: url('./bg.png');
+  /* opacity: 0.5; */
   background-size: auto;
 }
 
@@ -8,8 +9,17 @@ body {
   padding: 0;
 }
 
+/* .imgBg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.85;
+  z-index: -1;
+  background-repeat: repeat-x;
+} */
+
 .app {
-  width: 45em;
+  width: 70em;
   display: grid;
   gap: 1em;
   margin: 3em;
@@ -22,17 +32,17 @@ form {
 }
 
 button {
-  background: #17f;
+  background: #FF5733;
   color: #fff;
   font: inherit;
   border: none;
   border-radius: 3px;
   outline: none;
-  padding: 0.5em 1.5em;
+  padding: 0.8em 1.5em;
 }
 
 button:active {
-  background-color: #05b;
+  background-color: #32F40F;
 }
 
 input {

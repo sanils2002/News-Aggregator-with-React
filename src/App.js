@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Header } from './components/Header';
 import './App.css';
+import bgLogo from './bg.png';
 
 async function searchNews(q) {
   q = encodeURIComponent(q);
@@ -31,6 +32,7 @@ function App() {
   };
 
   return (
+    // <><img className='imgBg' src={bgLogo} alt="bg" />
     <div className="app">
       <Header />
       <form onSubmit={search}>
@@ -38,8 +40,7 @@ function App() {
           autoFocus
           value={query}
           onChange={e => setQuery(e.target.value)}
-          placeholder="Type to Search"
-        />
+          placeholder="Type to Search" />
         <button>Search</button>
       </form>
 
@@ -51,9 +52,9 @@ function App() {
             {list.map((item, i) => (
               <Item key={i} item={item} />
             ))}
-          </ul>
-      }
+          </ul>}
     </div>
+    // </>
   );
 }
 
