@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Header } from './components/Header';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import './App.css';
 import bgLogo from './bg.png';
 
@@ -73,7 +73,7 @@ function Item({ item }) {
       }
 
       <h2 className="title">
-        <a href={item.url}>{item.name}</a>
+        <a href={item.url} target="_blank">{item.name}</a>
       </h2>
 
       <p className="description">
