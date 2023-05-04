@@ -18,6 +18,12 @@ body {
   background-repeat: repeat-x;
 } */
 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
 .app {
   width: 70em;
   display: grid;
